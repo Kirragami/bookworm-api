@@ -3,6 +3,8 @@ const bcrypt = require('bcryptjs'); // Import bcryptjs for password verification
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(cors());
+
 // Sample data (same as before)
 const data = {
   users: [
