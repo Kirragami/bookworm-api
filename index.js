@@ -1,3 +1,4 @@
+const cors = require('cors');  // Ensure this is at the top of your file
 const express = require('express');
 const bcrypt = require('bcryptjs'); // Import bcryptjs for password verification
 const app = express();
