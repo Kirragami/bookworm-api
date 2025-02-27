@@ -214,7 +214,7 @@ app.patch('/api/userdata/:id', (req, res) => {
 
   // Apply the patch by merging the existing user data with the updated data
   data.userdata[userIndex] = { ...data.userdata[userIndex], ...updatedData };
-
+  saveData(data);
   res.json({ message: 'User data updated successfully', userdata: data.userdata[userIndex] });
 });
 
